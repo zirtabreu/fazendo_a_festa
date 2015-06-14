@@ -1,0 +1,94 @@
+#interface{
+	background:#F3E1C6;
+	/*position: relative;*/
+}
+#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	left: 1070px;
+}
+#menu li{
+	display: inline-block;
+	padding: 10px;
+	margin-right: 5px;
+	transition: background-color 1s;
+}
+#menu a{
+text-decoration: none;
+color:white;
+}
+#menu li:hover{	
+	background:  #800000;
+	color:white;
+	text-decoration: underline;
+
+}
+#img-header{
+	width: 1330px;
+	height: 485px;
+}
+.geometrico{
+	/*display: inline-block;*/
+	margin: 0 auto;
+  	padding: 14px 25%;
+}
+
+.circulo {
+      width: 300px;
+	  height: 300px;
+	  background: #FDF5E6;
+	  border-radius: 150px;
+	  margin: 0 auto;
+	  display: inline-block;
+	  text-align:center;
+        /*left: 700px;
+        position: relative;*/
+}
+.esquerda{
+	margin-left: 17px;
+}
+.jake{
+	width: 180px;
+	height: 170px;
+	margin-top: 30px;
+
+}
+.finnjake{
+	width: 180px;
+	height: 160px;
+	margin-top: 30px;
+}
+.esquerda li{
+	margin-top: 40px;
+	list-style: none;
+}
+.direita li{
+
+	margin-top: 40px;
+	list-style: none;
+}
+.circulo a{
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+	color: #8B0000;
+	text-decoration: none;
+}
+footer{
+	color: white;
+	clear: both;
+	text-align:center;
+	border-top: 2px solid #D3D3D3;
+	padding-top: 20px;
+	bottom:0;
+	width:100%;
+	background: #8B0000;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+text-decoration: underline;
+}
