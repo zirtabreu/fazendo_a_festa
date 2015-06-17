@@ -3,26 +3,51 @@
 	<head>
 			<meta charset="utf-8">
 			<title>Fazendo a Festa!</title>
-			<link rel="stylesheet" type="text.css" href="styleform.css"/>
+			<link rel="stylesheet" type="text.css" href="style.css"/>
+			<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	</head>
-	<body>
-		<form name="form_cadastro">
-			<h1>Faça seu cadastro</h1>
+	<body class="form">
+		<script type="text/javascript">
+		function enviar(){
+		if(document.form_cadastro.nome.value==""){
+			alert ("Preencha todos os campos do formulário!");
+			return false;
+		}
+		if(document.form_cadastro.login.value==""){
+			alert ("Preencha todos os campos do formulário!");
+			return false;
+		}
+		if(document.form_cadastro.senha.value==""){
+			alert("Preencha todos os campos do formulário!");
+			return false;
+		}
+		if(document.form_cadastro.email.value==""){
+			alert("Preencha todos os campos do formulário!");
+			return false;
+		}
+		}
+		</script>
+		<a href="index.html" class="home"><img src="img/home.png"> Home</a>
+		<form name="form_cadastro" class="form_cadastro" id="form">
+			<h1>Faça seu cadastro:</h1>
 				<p>
 					<label for="nome">Nome:</label>  
-				 	<input type="text" id="nomeid" placeholder="Nome" name="nome"/><br>
-				 	<label for="sobrenome">Sobrenome:</label>  
-				 	<input type="text" id="sobrenomeid" placeholder="Sobrenome" name="sobrenome"/><br> 
+				 	<input type="text" id="nome" placeholder="Nome e Sobrenome" name="nome"/><br>
 				 	<label for="login">Login:</label>  
-				 	<input type="text" id="loginid" placeholder="Login" name="login"/><br>
+				 	<input type="text" id="login" placeholder="Login" name="login"/><br>
 				 	<label for="senha">Senha:</label> 
 				 	<input type="password" id="senha" placeholder="Senha" name="senha"/><br>
- 				 	<label for="fone">Fone:</label>
-				 	<input type="text" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone"/><br> 
 				 	<label for="email">Email:</label> 
-				 	<input type="email" id="emailid" placeholder="fulano@mail.com" name="email"/><br> 
-				 	<input type="submit" onclick="Enviar();" value="Enviar"/> 
+				 	<input type="email" id="email" placeholder="fulano@mail.com" name="email"/><br> 
+				 	<input class="submit" type="submit" onclick="enviar();" value="Enviar"/> 
 			 	</p>
+
+			 	<img class="jake1" src="img/jake1.png">
 		</form>
+	 <footer>
+			Copyright &copy; 2015 - Fazendo a Festa!<br>
+			<a href="https://www.facebook.com/fazendoafesta2015?notif_t=page_new_likes" target="_blank">Facebook</a> | Twitter
+			<!-- <div class="fb-follow" data-href="https://www.facebook.com/fazendoafesta2015?skip_nax_wizard=true&amp;ref_type=bookmark" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>-->
+		</footer>
 	</body>
 </html>

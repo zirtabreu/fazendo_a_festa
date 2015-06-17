@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+			<meta charset="utf-8">
+			<title>Fazendo a Festa!</title>
+			<link rel="stylesheet" type="text.css" href="style.css"/>
+			<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="form">
+		<script type="text/javascript">
+		function enviar(){
+		if(document.form_cadastro.nome.value==""){
+			alert ("Preencha todos os campos do formulário!");
+			return false;
+		}
+		if(document.form_cadastro.email.value==""){
+			alert("Preencha todos os campos do formulário!");
+			return false;
+		}
+		if(document.form_cadastro.convite.value==""){
+			alert("Preencha todos os campos do formulário!");
+			return false;
+		}
+		}
+		</script>
+		<a href="index.html" class="home"><img src="img/home.png"> Home</a>
+		<form name="form_cadastro" class="form_cadastro">
+			<h1>Mande um Email e Convide seus Amigos para uma Super Festa!</h1>
+				<p>
+					<label for="nome">Nome:</label>  
+				 	<input type="text" id="nome" placeholder="Nome e Sobrenome" name="nome"/><br>
+				 	<label for="email">Email:</label> 
+				 	<input type="email" id="email" placeholder="fulano@mail.com" name="email"/><br> 
+				 	<textarea name="convite" id="convite" rows="10" cols="40" placeholder="Escreva sua mensagem aqui!"></textarea><br>
+				 	<input class="submit" type="submit" onclick="enviar();" value="Enviar"/> 
+			 	</p>
+		</form>
+	 <footer>
+			Copyright &copy; 2015 - Fazendo a Festa!<br>
+			<a href="https://www.facebook.com/fazendoafesta2015?notif_t=page_new_likes" target="_blank">Facebook</a> | Twitter
+			<!-- <div class="fb-follow" data-href="https://www.facebook.com/fazendoafesta2015?skip_nax_wizard=true&amp;ref_type=bookmark" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>-->
+		</footer>
+	</body>
+</html>
